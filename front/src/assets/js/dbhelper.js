@@ -26,7 +26,7 @@ class DBHelper {
         // =================== Original Code==========
         //const json = JSON.parse(xhr.responseText);
         //const restaurants = json.restaurants; */
-        o// ===================Note for reviewer===========================
+        // ===================Note for reviewer===========================
         /* Originally the app fetched data from restaurants.json which has only one property ("restaurants") with an array of objects as value. On the other hand, the api endpoint http://localhost:1337/restaurants instead returns an array of objects. There is no "restaurants" property, then json.restaurants does not exists. It's possible then to define restaurants constant in just one step   */
         const restaurants = JSON.parse(xhr.responseText);
         callback(null, restaurants);
